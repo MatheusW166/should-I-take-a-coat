@@ -1,12 +1,10 @@
 import {
-  Button,
-  Form,
-  Input,
+  CountryForm,
   PageContainer,
   TitleH1,
-} from './styles';
-import { WeatherChart } from '@/components/WeatherChart';
-import { WeatherOverview } from '@/components/WeatherOverview';
+  WeatherChart,
+  WeatherOverview
+} from '@/components';
 import { useWeather } from '@/hooks/useWeather';
 import { FormEvent } from 'react';
 
@@ -25,12 +23,7 @@ export default function Home() {
   return (
     <PageContainer>
       <TitleH1>Levo um casaquinho?</TitleH1>
-
-      <Form onSubmit={onSubmit}>
-        <Input name="country" type="text" placeholder="Digite o local..." />
-        <Button disabled={loading} type="submit">Buscar</Button>
-      </Form>
-
+      <CountryForm loading={loading} onSubmit={onSubmit} />
       <WeatherOverview
         country={weather?.country}
         description={weather?.description}
@@ -38,7 +31,6 @@ export default function Home() {
         min={weather?.min}
         temp={weather?.temp}
       />
-
       <WeatherChart forecast={forecast} />
     </PageContainer>
   );
