@@ -14,17 +14,17 @@ Aplicação que mostra a previsão do tempo do país informado através da api p
 
 ## Como utilizar
 
-### Clonando repositório
+#### Clonando repositório
 
 ```bash
 git clone https://github.com/MatheusW166/should-I-take-a-coat.git
 ```
 
-### Configurando .env
+#### Configurando .env
 
 Crie um arquivo com o nome ".env", conforme o exemplo em [.env.example](https://github.com/MatheusW166/should-I-take-a-coat/blob/main/.env.example).
 
-### Rodando
+#### Rodando
 
 ```bash
 npm install
