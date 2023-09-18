@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/MatheusW166/should-I-take-a-coat/blob/main/LICENSE)
+
 # Should I Take a Coat?
 
 Aplicação que mostra a previsão do tempo do país informado através da api pública da [OpenWeather](https://openweathermap.org/api).
